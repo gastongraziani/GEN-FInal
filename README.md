@@ -1,2 +1,3 @@
 # GEN
- Software Gestión de Emergencias Naturales
+Proyecto final de Ingenieria en Sistemas de Información
+GEN - Gestión de emergencias naturales
