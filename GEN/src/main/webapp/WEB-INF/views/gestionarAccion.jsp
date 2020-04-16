@@ -14,23 +14,23 @@
 
 
 <div class="container margentop">    
-	<h4>Gestionar Acciones</h4>
+	<h4>Gestione delle Azioni</h4>
 	<br>
 	
 <table id="dtBasicExample" class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th class="th-sm text-centro">Nombre 
+      <th class="th-sm text-centro">Nome 
       </th>
-      <th class="th-sm text-centro">Descripcion
+      <th class="th-sm text-centro">Descrizione
       </th>
-      <th class="th-sm text-centro">Estado
+      <th class="th-sm text-centro">Stato
       </th>
-      <th class="th-sm text-centro">Fecha alta
+      <th class="th-sm text-centro">Data di creazione
       </th>
-      <th class="th-sm text-centro">Modificar
+      <th class="th-sm text-centro">Cambiamento
       </th>
-      <th class="th-sm text-centro">Eliminar
+      <th class="th-sm text-centro">Remove
       </th>
     </tr>
   </thead>

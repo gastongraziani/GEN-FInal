@@ -16,7 +16,7 @@
 
 
 <script>
-	var mymap = L.map('mapid').setView([-32.955096650, -60.655925274], 14);
+	var mymap = L.map('mapid').setView([43.93667, 12.44639], 11);
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
 		id: 'mapbox.streets'
@@ -41,7 +41,7 @@
      'className' : 'custom'
      }
 	 
-	 var customPopup ="<div class='container'><center><p><h2>${rie.getNombre()} </h2><hr></p><p><img src='${rie.getImagen()}' alt='maptime logo gif' width='350px'/></p><hr><p><b><u>Descripcion:</u> </b>${rie.getDescripcion()}</p><hr><p><b><u>Estado:</u> </b>${rie.getEstado()}</p></center></div>" ;
+	 var customPopup ="<div class='container'><center><p><h2>${rie.getNombre()} </h2><hr></p><p><img src='${rie.getImagen()}' alt='maptime logo gif' width='350px'/></p><hr><p><b><u>Descrizione:</u> </b>${rie.getDescripcion()}</p><hr><p><b><u>Stato:</u> </b>${rie.getEstado()}</p></center></div>" ;
 	circle.bindPopup(customPopup,customOptions);
 	
 	var popup = L.popup();
@@ -79,7 +79,7 @@
      'className' : 'custom'
      }
 	 
-	 var customPopup ="<div class='container'><center> <p><h2>${acc.getNomacc()} </h2></p><hr><p><b><u>Descripcion:</u> </b>${acc.getDescripcion()}</p><hr><p><u><b>Riesgo:</u> </b>${acc.getNomrie()}</p><hr><p> <a href='eliminaraccrie?id=${acc.getIdaccrie()}&idusu=${acc.getId_usualta()}''><button type='button' class='btn btn-danger'>Eliminar <i class='far fa-trash-alt'></i></button></a>  </p></center></div>" ;
+	 var customPopup ="<div class='container'><center> <p><h2>${acc.getNomacc()} </h2></p><hr><p><b><u>Descrizione:</u> </b>${acc.getDescripcion()}</p><hr><p><u><b>Rischio:</u> </b>${acc.getNomrie()}</p><hr><p> <a href='eliminaraccrie?id=${acc.getIdaccrie()}&idusu=${acc.getId_usualta()}''><button type='button' class='btn btn-danger'>Annullare <i class='far fa-trash-alt'></i></button></a>  </p></center></div>" ;
 	circle.bindPopup(customPopup,customOptions);
 	
 	var popup = L.popup();

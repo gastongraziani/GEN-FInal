@@ -50,7 +50,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -78,7 +78,7 @@ public class RiesgoController {
 			Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 			boolean tipousu=usuh.getHabilitado();
 			if(tipousu) {
-				error="Usuario Deshabilitado";
+				error="Utente Disabile";
 				model.addAttribute("usu", new Usuario());
 				model.addAttribute("error", error);
 				return "login";
@@ -105,7 +105,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -130,7 +130,7 @@ public class RiesgoController {
 			Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 			boolean tipousu=usuh.getHabilitado();
 			if(tipousu) {
-				error="Usuario Deshabilitado";
+				error="Utente Disabile";
 				model.addAttribute("usu", new Usuario());
 				model.addAttribute("error", error);
 				return "login";
@@ -153,7 +153,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -175,7 +175,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -196,7 +196,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -220,7 +220,7 @@ public class RiesgoController {
 	Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 	boolean tipousu=usuh.getHabilitado();
 	if(tipousu) {
-		error="Usuario Deshabilitado";
+		error="Utente Disabile";
 		model.addAttribute("usu", new Usuario());
 		model.addAttribute("error", error);
 		return "login";
@@ -240,7 +240,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -259,14 +259,14 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -286,14 +286,14 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -314,14 +314,14 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -342,7 +342,7 @@ public class RiesgoController {
 	Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 	boolean tipousu=usuh.getHabilitado();
 	if(tipousu) {
-		error="Usuario Deshabilitado";
+		error="Utente Disabile";
 		model.addAttribute("usu", new Usuario());
 		model.addAttribute("error", error);
 		return "login";
@@ -361,7 +361,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -387,7 +387,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -409,7 +409,7 @@ public class RiesgoController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";

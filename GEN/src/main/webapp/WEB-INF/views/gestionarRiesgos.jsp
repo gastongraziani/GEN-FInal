@@ -14,33 +14,33 @@
 
 
 <div class="container margentop">    
-	<h4>Gestionar de Riesgos</h4>
+	<h4>Gestione del rischio</h4>
 	<br>
 	
 <table id="dtBasicExample" class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th class="th-sm text-centro">Nombre 
+      <th class="th-sm text-centro">Nome 
       </th>
-      <th class="th-sm text-centro">Fecha inicio
+      <th class="th-sm text-centro">Data di inizio 
       </th>
-      <th class="th-sm text-centro">Estado
+      <th class="th-sm text-centro">Stato	
       </th>
-      <th class="th-sm text-centro">Descripcion
+      <th class="th-sm text-centro">Descrizione
       </th>
-      <th class="th-sm text-centro">Tipo de Riesgo
+      <th class="th-sm text-centro">Categoria di rischio
       </th>
-      <th class="th-sm text-centro">Ciudad
+      <th class="th-sm text-centro">Cittá
       </th>
       <th class="th-sm text-centro">Provincia
       </th>
-      <th class="th-sm text-centro">Ver
+      <th class="th-sm text-centro">Vedi
       </th>
-      <th class="th-sm text-centro">Modificar
+      <th class="th-sm text-centro">Cambiamento
       </th>
-       <th class="th-sm text-centro">Agregar Accion
+       <th class="th-sm text-centro">Aggiungere Azione
       </th>
-      <th class="th-sm text-centro">Eliminar
+      <th class="th-sm text-centro">Remove
       </th>
     </tr>
   </thead>

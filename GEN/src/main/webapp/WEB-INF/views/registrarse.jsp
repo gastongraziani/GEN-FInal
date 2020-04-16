@@ -13,14 +13,14 @@
 	            <div class="md-form">
 				<i class="fas fa-signature prefix"></i>
 	                <form:input type="text" path="nombre" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Nombre</label>
+	    			<label for="nombre" class="textcontrol">Nome</label>
 	            </div>
 	        </div>
 	           <div class="col-md-6">
 	            <div class="md-form">
 				<i class="fas fa-signature prefix"></i>	   
                 <form:input type="text" path="apellido" class="form-control" required="true"/>
-	    		<label for="apellido" class="textcontrol">Apellido</label>
+	    		<label for="apellido" class="textcontrol">Cognome</label>
 	            </div>
 	        </div>
 	    </div>
@@ -31,14 +31,14 @@
 	            <div class="md-form">
 				<i class="fas fa-user prefix"></i>	   
 	               <form:input type="text" path="usuario" class="form-control" maxlength="18" pattern="[a-zA-Z0-9]((\.|_|-)?[a-zA-Z0-9]+){6}" title="El nombre de cuenta debe tener al menos 6 caracteres, pueden ser letras,numeros y ._- pero no al comienzo" required="true"/>
-	    			<label for="usuario" class="textcontrol">Usuario</label>
+	    			<label for="usuario" class="textcontrol">Account</label>
 	            </div>
 	        </div>
 	          <div class="col-md-6">
 	            <div class="md-form">
 				<i class="fas fa-envelope-square prefix"></i>
 	                <form:input type="email" path="email" class="md-textarea form-control"  aria-describedby="emailHelp" maxlength="18" pattern="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$" title="Ingrese un mail valido" required="true"/>
-	    			<label for="email" class="textcontrol">Email</label>
+	    			<label for="email" class="textcontrol">E-mail</label>
 	            </div>
 	      </div>
 	    </div>
@@ -56,7 +56,7 @@
 	            <div class="md-form">
 				<i class="fas fa-key prefix"></i>
                	 <input type="password" id="clave2"  class="form-control" onkeyup='check();' pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="La contraseña debe tener al menos 8 caracteres, letras y numeros" required/>
-	    			<label for="clave2" class="textcontrol">Repetir Password</label>
+	    			<label for="clave2" class="textcontrol">Repeti Password</label>
 	    			 <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
    						   	<span id='message'></span>
    					 </small>
@@ -69,7 +69,7 @@
 	            <div class="md-form">
 	            	<i class="fas fa-camera-retro prefix"></i>
 	                <form:input type="text" path="imagen" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Imagen de perfil</label>
+	    			<label for="nombre" class="textcontrol">Immagini del profilo</label>
 	            </div>
 	        </div>
 	    </div>
@@ -80,12 +80,12 @@
 	    </div>
 	     	<div class="col-md-2">
 	            <div class="md-form">
-	            <button type="button" class="btn btn-blue-grey">Cancelar</button>
+	            <button type="button" class="btn btn-blue-grey">Cancella</button>
 	    	 </div>
 	        </div>
 	        <div class="col-md-2">
 	            <div class="md-form">
-	            <button type="submit" id="btnReg" class="btn btn-success">Registrarse</button>
+	            <button type="submit" id="btnReg" class="btn btn-success">Iscriviti</button>
 	    	 </div>
 	        </div>
 	    </div>
@@ -105,12 +105,12 @@ var check = function() {
 	  if (document.getElementById('clave').value ==
 	    document.getElementById('clave2').value) {
 	    document.getElementById('message').style.color = 'green';
-	    document.getElementById('message').innerHTML = 'Las contraseñas coinciden <i class="far fa-laugh-beam"></i>';
+	    document.getElementById('message').innerHTML = 'Corrispondenza password <i class="far fa-laugh-beam"></i>';
 	    botonEnviar.disabled=false;
 	    return true;
 	  } else {
 	    document.getElementById('message').style.color = 'red';
-	    document.getElementById('message').innerHTML = 'No coinciden las contraseñas <i class="far fa-tired"></i>';
+	    document.getElementById('message').innerHTML = 'le password non corrispondono <i class="far fa-tired"></i>';
 	    botonEnviar.disabled=true;
 	    return false;
 	  }

@@ -66,7 +66,7 @@ public class HomeController {
 	public String radarMeteorological(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="radarMeteorologico";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir;
 	}
@@ -75,7 +75,7 @@ public class HomeController {
 	public String radarHumidity(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="radarHumedad";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir;
 	}
@@ -84,7 +84,7 @@ public class HomeController {
 	public String radarIsobar(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="radarIsobara";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir;
 	}
@@ -93,7 +93,7 @@ public class HomeController {
 	public String radarStorm(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="radarTormentas";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir;
 	}
@@ -102,7 +102,7 @@ public class HomeController {
 	public String aviacion(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="aviacion";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir;
 	}
@@ -111,7 +111,7 @@ public class HomeController {
 	public String anomalas(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="anomalas";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir; 
 	}
@@ -120,9 +120,45 @@ public class HomeController {
 	public String micuenta(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 		String ir="micuenta";
 		if(sesion.getAttribute("usuario")==null) 
-		{ir="login";model.addAttribute("usu", new Usuario());error="Debe estar logeado para ver un Mapa/Radar";model.addAttribute("error", error);}	
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
 		model.addAttribute("error", error);
 		return ir; 
+	}
+	
+	@RequestMapping(value = "/covid19JN", method = RequestMethod.GET)
+	public String covid19JN(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
+		String ir="mapaCovid19JN";
+		if(sesion.getAttribute("usuario")==null) 
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
+		model.addAttribute("error", error);
+		return ir;
+	}
+	
+	@RequestMapping(value = "/covid19TimeLine", method = RequestMethod.GET)
+	public String covid19Here(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
+		String ir="mapaCovid19TimeLine";
+		if(sesion.getAttribute("usuario")==null) 
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
+		model.addAttribute("error", error);
+		return ir;
+	}
+	
+	@RequestMapping(value = "/covid19Mundo3D", method = RequestMethod.GET)
+	public String covid19Mundo3D(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
+		String ir="mapaCovid19Mundo3D";
+		if(sesion.getAttribute("usuario")==null) 
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
+		model.addAttribute("error", error);
+		return ir;
+	}
+	
+	@RequestMapping(value = "/covid19Prueba", method = RequestMethod.GET)
+	public String covid19Prueba(Locale locale, Model model, HttpSession sesion, @RequestParam(required = false) String error) {
+		String ir="mapaCovid19Prueba";
+		if(sesion.getAttribute("usuario")==null) 
+		{ir="login";model.addAttribute("usu", new Usuario());error="Devi essere loggato per vedere una Mappa/Radar";model.addAttribute("error", error);}	
+		model.addAttribute("error", error);
+		return ir;
 	}
 	
 	@RequestMapping(value = "/ayuda", method = RequestMethod.GET)

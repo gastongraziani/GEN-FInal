@@ -6,7 +6,7 @@
 <body>
 
 <div class="container margentop">    
-	<h4>Modificar tipo de Accion</h4>
+	<h4>Modifica il tipo di azione</h4>
 	<br>
 	<form:form class="border border-light p-5" role="form" id="modiTAcc" action="modiTAcc" method="post" modelAttribute="ta">
 	<!--First row-->
@@ -17,7 +17,7 @@
 	            	<i class="fas fa-file-signature prefix"></i>
 	            	<form:input type="hidden" path="idTipo_accion" class="form-control" />
 	                <form:input type="text" path="nombre" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Nombre del Tipo de Accion</label>
+	    			<label for="nombre" class="textcontrol">Nome del Tipo de Azione</label>
 	            </div>
 	        </div>
 	    </div>
@@ -26,7 +26,7 @@
 	            <div class="md-form">
 					<i class="fas fa-align-justify prefix"></i>
 	                <form:textarea type="text" path="descripcion" class="md-textarea form-control" required="true"/>
-	    			<label for="descripcion" class="textcontrol">Descripcion del Tipo de accion</label>
+	    			<label for="descripcion" class="textcontrol">Descrizione del Tipo de Azione</label>
 	            </div>
 	      </div>
 	   </div>
@@ -39,12 +39,12 @@
 	    </div>
 	     	<div class="col-md-2">
 	            <div class="md-form">
-	            <button type="button" class="btn btn-blue-grey">Cancelar</button>
+	            <button type="button" class="btn btn-blue-grey">Annullare</button>
 	    	 </div>
 	        </div>
 	        <div class="col-md-2">
 	            <div class="md-form">
-	            <button type="submit" class="btn btn-success">Guardar</button>
+	            <button type="submit" class="btn btn-success">Salvare</button>
 	    	 </div>
 	        </div>
 	    </div>

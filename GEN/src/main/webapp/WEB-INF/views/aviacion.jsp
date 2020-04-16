@@ -4,7 +4,7 @@
 <%@ include file="includes/navbar.jsp" %>
 
 <div class="container-fliud">    
-<h1 class="margentop" style="text-align: center">Mapas para aviación Sudamerica</h1> 
+<h1 class="margentop" style="text-align: center">Mappe per l'aviazione in Sud America</h1> 
 <h2 class="margentop" style="text-align: center">Surface Wx Analysis</h2> 
 <img src="http://www.jetplan.com/weather/data/maps/sasfcwx00.gif" class="mapacentrado tamañomapa"/>
 <h2 class="margentop" style="text-align: center">Surface Wx Depiction</h2> 

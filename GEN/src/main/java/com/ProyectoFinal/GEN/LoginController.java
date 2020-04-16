@@ -56,7 +56,7 @@ public class LoginController {
 			ir="redirect:/mapaInteractivo";
 		}
 		else{model.addAttribute("usu",  new Usuario());
-		error="Error de usuario o password";
+		error="Errore dell'utente o password";
 		model.addAttribute("error", error);
 		ir="redirect:/login";}
 		
@@ -133,7 +133,7 @@ public class LoginController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -154,7 +154,7 @@ public class LoginController {
 	Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 	boolean tipousu=usuh.getHabilitado();
 	if(tipousu) {
-		error="Usuario Deshabilitado";
+		error="Utente Disabile";
 		model.addAttribute("usu", new Usuario());
 		model.addAttribute("error", error);
 		return "login";

@@ -14,14 +14,14 @@
 	            <div class="md-form">
 				<i class="fas fa-signature prefix"></i>
 	                <form:input type="text" path="nombre" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Nombre</label>
+	    			<label for="nombre" class="textcontrol">Nome</label>
 	            </div>
 	        </div>
 	           <div class="col-md-6">
 	            <div class="md-form">
 				<i class="fas fa-signature prefix"></i>	   
                 <form:input type="text" path="apellido" class="form-control" required="true"/>
-	    		<label for="apellido" class="textcontrol">Apellido</label>
+	    		<label for="apellido" class="textcontrol">Cognome</label>
 	            </div>
 	        </div>
 	    </div>
@@ -32,14 +32,14 @@
 	            <div class="md-form">
 				<i class="fas fa-user prefix"></i>	   
 	               <form:input type="text" path="usuario" class="form-control" maxlength="18" pattern="[a-zA-Z0-9]((\.|_|-)?[a-zA-Z0-9]+){6}" title="El nombre de cuenta debe tener al menos 6 caracteres, pueden ser letras,numeros y ._- pero no al comienzo" required="true"/>
-	    			<label for="usuario" class="textcontrol">Usuario</label>
+	    			<label for="usuario" class="textcontrol">Account</label>
 	            </div>
 	        </div>
 	          <div class="col-md-6">
 	            <div class="md-form">
 				<i class="fas fa-envelope-square prefix"></i>
 	                <form:input type="email" path="email" class="md-textarea form-control"  aria-describedby="emailHelp" maxlength="18" pattern="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$" title="Ingrese un mail valido" required="true"/>
-	    			<label for="email" class="textcontrol">Email</label>
+	    			<label for="email" class="textcontrol">E-mail</label>
 	            </div>
 	      </div>
 	    </div>
@@ -49,7 +49,7 @@
 	            <div class="md-form">
 	            	<i class="fas fa-camera-retro prefix"></i>
 	                <form:input type="text" path="imagen" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Imagen de perfil</label>
+	    			<label for="nombre" class="textcontrol">Immagini del profilo</label>
 	            </div>
 	        </div>
 	    </div>
@@ -60,12 +60,12 @@
 	    </div>
 	     	<div class="col-md-2">
 	            <div class="md-form">
-	            <button type="button" class="btn btn-blue-grey">Cancelar</button>
+	            <button type="button" class="btn btn-blue-grey">Cancella</button>
 	    	 </div>
 	        </div>
 	        <div class="col-md-2">
 	            <div class="md-form">
-	            <button type="submit" id="btnReg" class="btn btn-success">Modificar usuario</button>
+	            <button type="submit" id="btnReg" class="btn btn-success">Modifica utente</button>
 	    	 </div>
 	        </div>
 	    </div>

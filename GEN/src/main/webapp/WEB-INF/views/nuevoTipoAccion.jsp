@@ -6,7 +6,7 @@
 <body>
 
 <div class="container margentop">    
-	<h4>Alta de nuevo tipo de riesgo</h4>
+	<h4>Nuova categoria di Azione</h4>
 	<br>
 	<form:form class="border border-light p-5" role="form" id="crearTipoAccion" action="crearTipoAccion" method="post" modelAttribute="ta">
 	<!--First row-->
@@ -16,7 +16,7 @@
 	            <div class="md-form">
 	            	<i class="fas fa-file-signature prefix"></i>
 	                <form:input type="text" path="nombre" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Nombre del Tipo de Accion</label>
+	    			<label for="nombre" class="textcontrol">Nome</label>
 	            </div>
 	        </div>
 	    </div>
@@ -25,7 +25,7 @@
 	            <div class="md-form">
 					<i class="fas fa-align-justify prefix"></i>
 	                <form:textarea type="text" path="descripcion" class="md-textarea form-control" required="true"/>
-	    			<label for="descripcion" class="textcontrol">Descripcion del Tipo de accion</label>
+	    			<label for="descripcion" class="textcontrol">Descrizione</label>
 	            </div>
 	      </div>
 	   </div>
@@ -37,12 +37,12 @@
 	    </div>
 	     	<div class="col-md-2">
 	            <div class="md-form">
-	            <button type="button" class="btn btn-blue-grey">Cancelar</button>
+	            <button type="button" class="btn btn-blue-grey">Annullare</button>
 	    	 </div>
 	        </div>
 	        <div class="col-md-2">
 	            <div class="md-form">
-	            <button type="submit" class="btn btn-success">Guardar</button>
+	            <button type="submit" class="btn btn-success">Salvare</button>
 	    	 </div>
 	        </div>
 	    </div>

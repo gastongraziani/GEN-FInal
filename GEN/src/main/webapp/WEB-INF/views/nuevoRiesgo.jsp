@@ -6,7 +6,7 @@
 <body>
 
 <div class="container margentop">    
-	<h4>Alta de nuevo riesgo</h4>
+	<h4>Nuovo Rischio</h4>
 	<br>
 	<form:form class="border border-light p-5" role="form" id="crearRiesgo" action="crearRiesgo" method="post" modelAttribute="rie">
 	<!--First row-->
@@ -16,7 +16,7 @@
 	            <div class="md-form">
 	            	<i class="fa fa-fire prefix"></i>
 	                <form:input type="text" path="nombre" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Nombre del riesgo</label>
+	    			<label for="nombre" class="textcontrol">Nome</label>
 	            </div>
 	        </div>
 	    
@@ -25,7 +25,7 @@
 	               <div class="md-form">
                       <div class="form-group">
 					    <form:select id="cmtr" path="tipo_riesgo" class="form-control" required="true">
-					  	 	 <form:option value="1" label="Seleccione el tipo de riesgo" />
+					  	 	 <form:option value="1" label="Seleziona il tipo di rischio" />
 					  	  	 <form:options items="${trs}" itemValue="id_tipor" itemLabel="nombre" />
 						</form:select>
 					  </div>
@@ -42,7 +42,7 @@
 	               <div class="md-form">
                       <div class="form-group">
 					    <form:select id="cmprov" path="prv" class="form-control" required="true">
-    					  <form:option value="0" label="Selecciona Provincia" />
+    					  <form:option value="0" label="Seleziona Provincia" />
 						  <form:options items="${prvs}" itemValue="id_provincia" itemLabel="nombre" />
 						</form:select>
 					  </div>
@@ -53,7 +53,7 @@
 	               <div class="md-form">
                       <div class="form-group">
 					    <form:select id="cmciu" path="ciu" class="form-control">
-    					  <form:option value="1111" label="Selecciona Ciudad" />
+    					  <form:option value="1111" label="Seleziona Citta" />
 					 <!--/ <form:options items="${cius}" itemValue="id_ciudad" itemLabel="nombre" />-->
 						</form:select>
 					  </div>
@@ -67,7 +67,7 @@
 	            <div class="md-form">
 	            	<i class="fa fa-font prefix"></i>
 	                <form:textarea type="text" id="desc" path="descripcion" class="md-textarea " required="true"/>
-	                <label for="desc" class="textcontrol">Descripción del riesgo</label>
+	                <label for="desc" class="textcontrol">Descrizione</label>
 	            </div>
 	
 	        </div>
@@ -78,21 +78,20 @@
 	            <div class="md-form">
 	            	<i class="fas fa-camera-retro prefix"></i>
 	                <form:input type="text" path="imagen" class="form-control" required="true"/>
-	    			<label for="nombre" class="textcontrol">Imagen del riesgo</label>
+	    			<label for="nombre" class="textcontrol">Immagine di rischio</label>
 	            </div>
 	        </div>      
 	   </div>
 	   
 	   <br>
 	   	<div class="row">
-	   	<i class="fas fa-map-marked-alt"></i> <h3 class="text-centro">	Seleccione la ubicacion del riesgo</h3>
+	   	<i class="fas fa-map-marked-alt"></i> <h3 class="text-centro">	Selezionare la posizione del rischio</h3>
 	   		<div class="col-md-12">
 			   	<div id="mapubic">
 				    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>   
 	      		</div>
 		   	</div>
 	    </div>
-		  
 	    <div class="row">
 	    	<div class="col-md-4">
 	    		<form:input type="text" path="latitud" id="latitud" name="latitud" class="form-control" />
@@ -105,24 +104,24 @@
 	   <div class="col-md-4">
 	   		Color Marcador:
 	    	 <form:select id="color" path="color" class="form-control" required="true">
-    					  <form:option value="red" label="Rojo" />
-						  <form:option value="blue" label="Azul" />
-						  <form:option value="black" label="Negro" />
-						  <form:option value="white" label="Blanco" />
-						  <form:option value="yellow" label="Amarillo" />
-						  <form:option value="orange" label="Naranja" />
-						  <form:option value="grey" label="gris" />
-						  <form:option value="green" label="verde" />
+    					  <form:option value="red" label="Rosso" />
+						  <form:option value="blue" label="Azzurro" />
+						  <form:option value="black" label="Nero" />
+						  <form:option value="white" label="Bianco" />
+						  <form:option value="yellow" label="Giallo" />
+						  <form:option value="orange" label="Arancia" />
+						  <form:option value="grey" label="Grigio" />
+						  <form:option value="green" label="Verde" />
 						  
 			 </form:select>
 	    	</div>
 	    	<div class="col-md-4">
 	    	Tamaño Marcador:
 	    		 <form:select id="tamaño" path="tamaño" class="form-control" required="true">
-    					  <form:option value="40" label="Chico" />
-						  <form:option value="75" label="Mediano" />
+    					  <form:option value="40" label="Piccolo" />
+						  <form:option value="75" label="Medio" />
 						  <form:option value="150" label="Grande" />
-						  <form:option value="450" label="Muy Grande" />
+						  <form:option value="450" label="Molto Grande" />
 			 </form:select>
 	    	</div>
 	    </div>
@@ -132,12 +131,12 @@
 	   </div>
 	     	<div class="col-md-2">
 	            <div class="md-form">
-	            <button type="button" class="btn btn-blue-grey">Cancelar</button>
+	            <button type="button" class="btn btn-blue-grey">Annullare</button>
 	    	 </div>
 	        </div>
 	        <div class="col-md-2">
 	            <div class="md-form">
-	            <button type="submit" class="btn btn-success">Guardar</button>
+	            <button type="submit" class="btn btn-success">Salvale</button>
 	    	 </div>
 	        </div>
 	    </div>
@@ -147,7 +146,7 @@
 
 <script>
 
-var mymap = L.map('mapubic').setView([-32.955096650, -60.655925274], 14);
+var mymap = L.map('mapubic').setView([43.93667, 12.44639], 14);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	maxZoom: 16,
 	id: 'mapbox.streets'
@@ -160,7 +159,7 @@ function onMapClick(e) {
 	latitud.value=e.latlng.lat
     popup
         .setLatLng(e.latlng)
-        .setContent("Latitud: " + e.latlng.lat+" Longitud: " + e.latlng.lng)
+        .setContent("Latitudine: " + e.latlng.lat+" Longitudine: " + e.latlng.lng)
         .openOn(mymap);
     
 }

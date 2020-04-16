@@ -7,17 +7,17 @@
 
 <div class="container margentop">    
 	<div class="text-centro">
-		<h2>Riesgo ${rie.nombre}</h2>
+		<h2>Rischio ${rie.nombre}</h2>
 	</div>
 	<br>
 	<form:form class="border border-light" role="form" id="crearRiesgo" action="crearRiesgo" method="post" modelAttribute="rie">
 	 <div class="card mb-3">  
 		  <img src="${rie.imagen}" class="card-img-top" alt="Imagen del riesgo">
 		  <div class="card-body">
-		    <h5 class="card-title">Riesgo:${rie.nombre}</h5>
+		    <h5 class="card-title">Rischio:${rie.nombre}</h5>
 		    <p class="card-text">${rie.descripcion}</p>
-		    <p class="card-text">Estado: ${rie.estado}</p>
-		    <p class="card-text"><small class="text-muted">Fecha inicio: ${rie.fecha_inicio}</small></p>
+		    <p class="card-text">Stato: ${rie.estado}</p>
+		    <p class="card-text"><small class="text-muted">Data di Inizio: ${rie.fecha_inicio}</small></p>
 		  </div>
 	</div>
 

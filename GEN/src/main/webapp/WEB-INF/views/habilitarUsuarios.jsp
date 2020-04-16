@@ -14,21 +14,21 @@
 
 
 <div class="container margentop">    
-	<h4>Habilitar usuarios:</h4>
+	<h4>Abilitare utenti:</h4>
 	<br>
 	
 <table id="dtBasicExample" class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th class="th-sm">Nombre 
+      <th class="th-sm">Nome 
       </th>
-      <th class="th-sm">Apellido
+      <th class="th-sm">Cognome
       </th>
-      <th class="th-sm">Email
+      <th class="th-sm">E-mail
       </th>
-      <th class="th-sm">Usuario
+      <th class="th-sm">Utente
       </th>
-      <th class="th-sm">Habilitar
+      <th class="th-sm">Stato
       </th>
     </tr>
   </thead>
@@ -41,12 +41,12 @@
 		 <td><c:out value="${usus.usuario}" /></td>
 		 <c:if test="${(usus.habilitado)}">
 		 <td>
-			<a href="habilitarUsu?id=${usus.idusuario}"><button type="button" class="btn btn-success">Habilitar <i class="far fa-check-circle"></i></button></a>
+			<a href="habilitarUsu?id=${usus.idusuario}"><button type="button" class="btn btn-success">abilitare <i class="far fa-check-circle"></i></button></a>
 		</td>
 		</c:if>
 		<c:if test="${!(usus.habilitado)}">
 		<td>
-			<a href="deshabilitarUsu?id=${usus.idusuario}"><button type="button" class="btn btn-danger">Deshabilitar <i class="fas fa-times"></i></button></a>
+			<a href="deshabilitarUsu?id=${usus.idusuario}"><button type="button" class="btn btn-danger">disabilitare <i class="fas fa-times"></i></button></a>
 		</td>
 		</c:if>
 											

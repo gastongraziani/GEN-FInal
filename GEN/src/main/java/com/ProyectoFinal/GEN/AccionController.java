@@ -45,7 +45,7 @@ public class AccionController {
 	public String nuevaAccion(Model model, HttpSession sesion, @RequestParam(required = false) String error) {
 	if(sesion.getAttribute("usuario")==null) 
 		{
-			error="Debe estar logeado para crear una Acción";
+			error="Per creare un'azione è necessario aver effettuato il login";
 			model.addAttribute("error", error);
 			model.addAttribute("usu", new Usuario());
 			return "login";
@@ -54,7 +54,7 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -81,7 +81,7 @@ public class AccionController {
 			Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 			boolean tipousu=usuh.getHabilitado();
 			if(tipousu) {
-				error="Usuario Deshabilitado";
+				error="Utente Disabile";
 				model.addAttribute("usu", new Usuario());
 				model.addAttribute("error", error);
 				return "login";
@@ -99,7 +99,7 @@ public class AccionController {
 		String ir="login";
 		if(sesion.getAttribute("usuario")==null) 
 		{
-			error="Debe estar logeado para crear un Tipo de Acción";
+			error="È necessario effettuare il login per creare una categoria di azione";
 			model.addAttribute("error", error);
 			model.addAttribute("usu", new Usuario());
 			return "login";
@@ -108,7 +108,7 @@ public class AccionController {
 			Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 			boolean tipousu=usuh.getHabilitado();
 			if(tipousu) {
-				error="Usuario Deshabilitado";
+				error="Utente Disabile";
 				model.addAttribute("usu", new Usuario());
 				model.addAttribute("error", error);
 				return "login";
@@ -133,7 +133,7 @@ public class AccionController {
 			Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 			boolean tipousu=usuh.getHabilitado();
 			if(tipousu) {
-				error="Usuario Deshabilitado";
+				error="Utente Disabile";
 				model.addAttribute("usu", new Usuario());
 				model.addAttribute("error", error);
 				return "login";
@@ -156,7 +156,7 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -178,12 +178,12 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
-		msj="Accion Eliminado";
+		msj="Azione Eliminata";
 		model.addAttribute("msj", msj);
 		model.addAttribute("accs",AccionDatos.eliminarAccion(id));
 		return "mapaInteractivo";
@@ -199,7 +199,7 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -221,7 +221,7 @@ public class AccionController {
 	Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 	boolean tipousu=usuh.getHabilitado();
 	if(tipousu) {
-		error="Usuario Deshabilitado";
+		error="Utente Disabile";
 		model.addAttribute("usu", new Usuario());
 		model.addAttribute("error", error);
 		return "login";
@@ -240,14 +240,14 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -267,19 +267,19 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
-		msj="Tipo Accion Eliminado";
+		msj="Categoria di azione eliminata";
 		model.addAttribute("msj", msj);
 		model.addAttribute("ries",tipoAccionDatos.eliminartipoAccion(id));
 		return "gestionarTipoAccion";
@@ -295,14 +295,14 @@ public class AccionController {
 		Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 		boolean tipousu=usuh.getHabilitado();
 		if(tipousu) {
-			error="Usuario Deshabilitado";
+			error="Utente Disabile";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
 		}
 		if(usuh.getTipoUsuario()!=0)
 		 {
-			error="Usted no es usuario administrador";
+			error="Non sei un utente amministratore";
 			model.addAttribute("usu", new Usuario());
 			model.addAttribute("error", error);
 			return "login";
@@ -323,7 +323,7 @@ public class AccionController {
 	Usuario usuh=(Usuario)sesion.getAttribute("usuario");
 	boolean tipousu=usuh.getHabilitado();
 	if(tipousu) {
-		error="Usuario Deshabilitado";
+		error="Utente Disabile";
 		model.addAttribute("usu", new Usuario());
 		model.addAttribute("error", error);
 		return "login";

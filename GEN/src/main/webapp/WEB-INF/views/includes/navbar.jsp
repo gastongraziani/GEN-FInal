@@ -18,37 +18,48 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
-			                    <a  class="nav-link" href="/GEN">Mapa Riesgos</a>
+			                    <a  class="nav-link" href="/GEN">Mappa dei Rischi</a>
 			            </li>              
              <!-- Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Riesgos</a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rischi</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="nuevoRiesgo">Nuevo Riesgo</a>
-                    <a class="dropdown-item" href="gestionarRiesgos">Gestionar Riesgo</a>
-                    <a class="dropdown-item" href="nuevoTipoRiesgo">Nuevo Tipo de Riesgo</a>
+                    <a class="dropdown-item" href="nuevoRiesgo">Nuovo Rischio</a>
+                    <a class="dropdown-item" href="gestionarRiesgos">Gestire i Rischi</a>
+                    <a class="dropdown-item" href="nuevoTipoRiesgo">Nueva Categoria di Rischi</a>
                     <c:if test="${usuario.getTipoUsuario() == 0}">
-                       <a class="dropdown-item" href="gestionarTipoRiesgos">Gestionar Tipo de Riesgos</a>
+                       <a class="dropdown-item" href="gestionarTipoRiesgos">Gestire i Categorie di Rischi</a>
                     </c:if>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Azioni</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="nuevaAccion">Nueva Accion</a>
-                    <a class="dropdown-item" href="gestionarAcciones">Gestionar Acciones</a>
-                    <a class="dropdown-item" href="nuevoTipoAccion">Nuevo Tipo de Accion</a>
+                    <a class="dropdown-item" href="nuevaAccion">Nuova Azione</a>
+                    <a class="dropdown-item" href="gestionarAcciones">Gestire le Azioni</a>
+                    <a class="dropdown-item" href="nuevoTipoAccion">Nuova Categoria di Azioni</a>
                      <c:if test="${usuario.getTipoUsuario() == 0}">
-                       <a class="dropdown-item" href="gestionarTipoAccion">Gestionar Tipo de Acciones</a>
+                       <a class="dropdown-item" href="gestionarTipoAccion">Gestire Categoria di Azioni</a>
                     </c:if>
                 </div>
             </li>
+            
             <!-- Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mapas</a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Covid 19</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="mapaInteractivo">Mapas</a>
-                    <a class="dropdown-item" href="aviacion">Mapas para aviacion</a>
+                    <a class="dropdown-item" href="covid19JN">Covid 19 Johns Hopkins</a>
+                    <a class="dropdown-item" href="covid19TimeLine">Covid 19 TimeLine</a>
+                    <a class="dropdown-item" href="covid19Mundo3D">Covid 19 Mondo 3D</a>
+                </div>
+            </li>
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mappe</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="mapaInteractivo">Mappe</a>
+                    <a class="dropdown-item" href="aviacion">Mappe per l'aviazione</a>
                 </div>
             </li>
            
@@ -56,7 +67,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="habilitarUsuarios">Habilitar Usuarios</a>
+                    <a class="dropdown-item" href="habilitarUsuarios">Abilita gli utenti</a>
                 </div>
             </li>
             </c:if>
@@ -66,7 +77,7 @@
 
         <ul class="navbar-nav ml-auto">
                          <li class="nav-item dropdown">
-			                    <a  class="nav-link" href="ayuda">Ayuda</a>
+			                    <a  class="nav-link" href="ayuda">Aiuto</a>
 			            </li>        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
@@ -76,13 +87,13 @@
                              	<a class="dropdown-item" href="login">Login</a>
                              	<%}%>
                              	<% if (session.getAttribute("usuario") == null){%>
-                             	<a class="dropdown-item" href="nuevoUsuario">Crear cuenta</a>
+                             	<a class="dropdown-item" href="nuevoUsuario">Crea un nuovo account</a>
                              	<%}%>
                              	<% if (session.getAttribute("usuario") != null){%>
-                                <a class="dropdown-item" href="modusu">Mi cuenta</a>
+                                <a class="dropdown-item" href="modusu">Il mio Account</a>
                                 <%}%>
                                 <% if (session.getAttribute("usuario") != null){%>
-                                <a class="dropdown-item" href="finsesion">cerrar sesion</a>
+                                <a class="dropdown-item" href="finsesion">Logout</a>
                                 <%}%>
                             </div>
                         </li>

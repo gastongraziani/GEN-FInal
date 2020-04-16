@@ -15,25 +15,25 @@
 	<div class="col-md-6 login">
 	 <!-- form login -->
 	<form:form class="text-center border border-light p-5" role="form" id="valida" action="validar" method="POST" modelAttribute="usu">
-	    <p class="h4 mb-4">Ingresar a GEN</p>
+	    <p class="h4 mb-4">Accedi a GEN</p>
 	    <!-- Email -->
-		<form:input path="usuario" class="form-control mb-4" type="text" placeholder="Usuario" required="true"/>	
+		<form:input path="usuario" class="form-control mb-4" type="text" placeholder="Account" required="true"/>	
 	    <!-- Password -->
 	    <form:input  path="clave"  class="form-control mb-4"  type="password" placeholder="Password" required="true"/>
 	
 	    <div class="d-flex justify-content-around">
 	        <div>
 	            <!-- Forgot password -->
-	            <a href="">¿Olvidaste tu contraseña?</a>
+	            <a href="">Non ricordi più come accedere all'account?</a>
 	        </div>
 	    </div>
 	
 	    <!-- Sign in button -->
-	    <button class="btn btn-info btn-block my-4" type="submit">Ingresar</button>
+	    <button class="btn btn-info btn-block my-4" type="submit">Accedi</button>
 	
 	    <!-- Register -->
-	    <p>¿No eres miembro?
-	        <a href="nuevoUsuario">Registrarse</a>
+	    <p>¿Non hai un account?
+	        <a href="nuevoUsuario">Crea un nuovo account</a>
 	    </p>
 
 	
